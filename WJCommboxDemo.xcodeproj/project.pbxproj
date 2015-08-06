@@ -17,6 +17,7 @@
 		9CD889AC1B732B9A00988CA8 /* WJCommboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD889AB1B732B9A00988CA8 /* WJCommboxView.m */; };
 		9CD889AE1B73314600988CA8 /* narrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD889AD1B73314600988CA8 /* narrow@2x.png */; };
 		9CD889B21B73315F00988CA8 /* narrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD889B11B73315F00988CA8 /* narrow@3x.png */; };
+		9CD889B41B7338BE00988CA8 /* wjbox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CD889B31B7338BE00988CA8 /* wjbox.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9CD889AB1B732B9A00988CA8 /* WJCommboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCommboxView.m; sourceTree = "<group>"; };
 		9CD889AD1B73314600988CA8 /* narrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "narrow@2x.png"; sourceTree = "<group>"; };
 		9CD889B11B73315F00988CA8 /* narrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "narrow@3x.png"; sourceTree = "<group>"; };
+		9CD889B31B7338BE00988CA8 /* wjbox.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wjbox.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		9CD8897E1B732AD900988CA8 /* WJCommboxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9CD889B31B7338BE00988CA8 /* wjbox.gif */,
 				9CD889A91B732B9A00988CA8 /* WJCommboxView */,
 				9CD889831B732AD900988CA8 /* AppDelegate.h */,
 				9CD889841B732AD900988CA8 /* AppDelegate.m */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CD8898B1B732AD900988CA8 /* Main.storyboard in Resources */,
+				9CD889B41B7338BE00988CA8 /* wjbox.gif in Resources */,
 				9CD889901B732AD900988CA8 /* LaunchScreen.xib in Resources */,
 				9CD889B21B73315F00988CA8 /* narrow@3x.png in Resources */,
 				9CD8898D1B732AD900988CA8 /* Images.xcassets in Resources */,
@@ -438,6 +442,7 @@
 				9CD889A11B732AD900988CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CD889A21B732AD900988CA8 /* Build configuration list for PBXNativeTarget "WJCommboxDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +451,7 @@
 				9CD889A41B732AD900988CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
