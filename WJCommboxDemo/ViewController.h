@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController
 
 @property(nonatomic,strong) NSArray *cityArray;
+@property (nonatomic,strong) UIView *comBackView;
 @end
 

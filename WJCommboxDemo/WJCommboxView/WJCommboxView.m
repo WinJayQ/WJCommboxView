@@ -61,12 +61,13 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField; {
     [self dropdown];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"commboxNotice" object:@(textField.tag)];
     return NO;
 }
 -(void)dropdown{
    
     [self.textField resignFirstResponder];
-    if (self.showList) {//如果下拉框已显示，则进行隐藏
+    if (!self.listTableView.hidden) {//如果下拉框已显示，则进行隐藏
         self.showList = NO;
         self.listTableView.hidden = YES;
         
@@ -133,6 +134,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.textField.text = [self.dataArray objectAtIndex:[indexPath row]];
+    if (self.textField.text.length > 0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"commboxNotice2" object:@(self.textField.tag)];
+    }
     self.showList = NO;
     self.listTableView.hidden = YES;
     
